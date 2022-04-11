@@ -55,11 +55,28 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: SizedBox(
-        width: 120,
-        height: 40,
-        child: Image.network(
-            'https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-á-padriñán-255379.jpg&fm=jpg'),
+      body: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Image.asset('assets/bannerimg.jpeg',
+                  height: 300,
+                  width: MediaQuery.of(context).size.width,
+                  fit: BoxFit.cover)
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Container(
+                color: Colors.green,
+                margin: const EdgeInsets.only(left: 20, top: 10),
+                child: const Text("data"),
+              ),
+              const Padding(padding: EdgeInsets.only(left: 10, top: 20)),
+              const Text("hello from ayman")
+            ],
+          )
+        ],
       ),
     );
   }
