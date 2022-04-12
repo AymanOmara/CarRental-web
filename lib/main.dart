@@ -75,6 +75,14 @@ class _MyHomePageState extends State<MyHomePage> {
               const Padding(padding: EdgeInsets.only(left: 10, top: 20)),
               const Text("hello from ayman")
             ],
+          ),
+          Row(
+            children: const <Widget>[
+              Padding(padding: EdgeInsets.only(left: 10)),
+              Text("first text"),
+              Padding(padding: EdgeInsets.only(left: 10)),
+              Text("second text"),
+            ],
           )
         ],
       ),
